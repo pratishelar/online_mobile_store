@@ -1,0 +1,13 @@
+.review {padding-bottom: 5px;}
+.panel-body.review-container {padding-top: 0;}
+.review-header {margin-bottom: 10px;}
+.reviewAuthor {margin: 0 5px;}
+.reviewTimestamp {color: #ccc;}
+.main { background-color: white; color: black;}
+.navbar-dark {background-color: black;}
+.jumbotron { background-color: #e9ecef; }
+.list-group-item { background-color: #e9ecef; }
+.list-group-item:hover { background-color:black; color: white;}
+.nav li a:hover {background-color: black;}
+.foot {background-color: #e9ecef;}
+.panel-body {background-color: #e9ecef;}

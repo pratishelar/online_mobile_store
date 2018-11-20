@@ -1,0 +1,43 @@
+extends layout
+
+include _includes/sharedHTMLfunctions
+
+block content
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          h1= mobiles.name
+          p= mobiles.details
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Screen Details
+            .panel-body
+                ul
+                  li
+                    h4= mobiles.screentype
+                  li
+                     h4= mobiles.screensize
+                  li
+                    h4= mobiles.screenratio
+                    
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Features
+            .panel-body
+              p.feature=mobiles.feature
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Image
+            .panel-body
+              img.img-responsive.img-rounded(src="/images/phone-x.png")
+
+    .col-xs-12.col-md-3
+      p.lead #{mobiles.name} #{sidebar.context}
+    .row
+      .col-xs-12.col-md-6
+         a(href="/mobiledelete/#{mobiles._id}")
+            button.btn.btn-primary.pull-right Buy Mobile
+      
+script(src='/javascripts/validation.js')

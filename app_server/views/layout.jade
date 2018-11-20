@@ -1,0 +1,46 @@
+doctype html
+html(ng-app='mobileapp')
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title= title
+    link(rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body.main      
+   .navbar.navbar-dark.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href='/') Buy Phone
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navbar-main.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/sell') Sell
+            li
+              a(href='/about') About
+    
+    
+   .jumbotron
+        .container
+            h2 Cell Rox
+            p Buy any Mobile for less price
+    
+   .container
+      block content
+      
+   footer.foot
+    ul
+      li
+        a(href="/about") About
+      li
+        a(href="/privacy") Privacy
+      p
+        | Group Project <br> 
+        | &copy; 2018, All Rights Reserved
+
+    script(src='/javascripts/jquery-1.11.1.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
+    script(src='/angular/angular.min.js')
+    script(src='/angular/mobileapp.js')

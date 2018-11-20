@@ -1,0 +1,9 @@
+{
+ "name": "iphone x",
+ "details": "Also known as Apple iPhone 10, Apple iPhone Ten",
+ "features": "3D Touch",
+ "screentype": "Super AMOLED capacitive touchscreen, 16M colors",
+ "screensize": "5.8 inches, 84.4 cm2 (~82.9% screen-to-body ratio)",
+ "screenratio": "1125 x 2436 pixels, 19.5:9 ratio (~458 ppi density)"
+
+}

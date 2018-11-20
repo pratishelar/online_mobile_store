@@ -1,0 +1,19 @@
+extends layout
+
+include _includes/sharedHTMLfunctions
+
+block content 
+  .row 
+    .col-xs-12.col-sm-8(ng-controller="MobileListCtrl")
+       label(for="filter") Filter results
+       input#filter(type="text", name="filter", ng-model="textFilter")
+       .error {{ message }}
+       .row.list-group
+          .col-xs-12.list-group-item(ng-repeat="mobile in data.mobiles | filter : textFilter")
+             h4 
+               a(href="/mobileinfo/{{ mobile._id }}") {{ mobile.name }}
+             p.details {{ mobile.details }}
+             p.feature {{ mobile.feature }}
+            
+    .col-xs-12.col-sm-4 
+      p.lead= sidebar
